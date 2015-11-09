@@ -1,5 +1,7 @@
 \documentclass[]{report}
-
+\usepackage{graphicx}
+\usepackage{afterpage}
+\graphicspath{ {images/} }
 
 % Title Page
 \title{}
@@ -7,21 +9,33 @@
 
 
 \begin{document}
-\maketitle 
+	
 
 \begin{abstract}
 	            Big Data analytics plays a key role through reducing the data size and complexity in Big Data applications. Visualization is an important approach to helping Big Data get a complete view of data and discover data values. Big Data analytics and visualization should be integrated seamlessly so that they work best in Big Data applications. Conventional data visualization methods as well as the extension of some conventional methods to Big Data applications are introduced in this paper. The challenges of Big Data visualization are discussed. New methods, applications, and technology progress of Big Data visualization are presented.
 \end{abstract}
 
 \tableofcontents
+\listoffigures
+
 \chapter{INTRODUCTION}
-\section {Data Vi\parskipsualization Market}
-Data visualization is representing data in some systematic form including attributes and variables for the unit of information. Visualization-based data discovery methods allow business users to mash up disparate data sources to create custom analytical views. Advanced analytics can be integrated in the methods to support creation of interactive and animated graphics on desktops,laptops, or mobile devices such as tablets and smart phones. Benefits of data visualization according to the respondent percentages of a survey includes improved decision making,better ad-hoc data analysis,improved collaboration,provide self service capability to end users,time savings etc.
-\section{The Rise Of Data Visualization}
-Data illustration techniques have been in use since as early as 6200 BC, when the oldest known map was drawn. However, it was not until the eighteenth century when data visualizations went beyond mapping and more abstract measures were introduced, including the ever-popular pie and bar charts.The nineteenth century saw the creation of what many have argued to be the world’s best data visualization: Charles Joseph Minard’s 1869 visualization titled Napoleon’s March, which depicts the movement and losses of Napoleon’s army as it invaded Russia in 1812.After 1975, we witnessed the most rapid advancements in data visualization, which stemmed from the development of software and computer systems.\par 
-Data visualizations moved beyond pie and bar charts, and more complex formats began to appear and aid us in processing information. For example, through the use of mind maps, our thought patterns can now be visually organized. Apps like Flipboard and Newsmap have completely reinvented the display of news, while tag clouds have provided another way to discover and search for information. And through network graphs, we can now uncover the connectivity between any number of entities, be they our own social circles, groups of companies or globally dispersed cities.
-\end{document}          
+\input{chapters/introduction.tex}
 
 \chapter{BIG DATA ANALYTICS}
-BigData, according to Wikipedia (Sep 2015), is “the term for a collection of data set so large and d complex that it becomes difficult to process using on n-hand database management tools or traditional d data processing applications”. The data-sets not only contain structured databases, but also include unstructured d databases such as social media data or GPS (Global Positioning System) data.\paragraph{}BigData comes from everywhere influence our life, and so is too big, too complex and moves too fast. For example, posting pictures and writing comments on Facebook; uploading and watching videos on YouTube; sending and receiving messages through smart phones; sending voice messages through Whatspapp all count as BigData. To analyse BigData, new analytical methods have to be developed to feed business, government and organization needs.
-\section {Data Visualization Market}
+\input{chapters/bigdataanalytics.tex}
+
+\chapter{DATA VISUALIZATION METHODS}
+\input{chapters/datavisualizationmethods.tex}
+
+\chapter{BIG DATA VISUALIZATION AND CHALLENGES}
+\input{chapters/bigdatavisualizationandchallenges]}
+
+\chapter{PROGRESS OF BIGDATA VISUALIZATION}
+\input{chapters/progressbigdata}
+
+\chapter{CONCLUSION}
+\input{chapters/conclution}
+
+\input{chapter/references}
+
+\end{document} 
