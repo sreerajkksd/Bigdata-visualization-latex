@@ -1,10 +1,23 @@
-\documentclass[]{report}
+\documentclass[12pt]{report}
 \usepackage{graphicx}
 \usepackage{afterpage}
+\usepackage{sectsty}  
+\usepackage{mathptmx} 
 \usepackage[a4paper,left=1.5in,right=1.0in,top=24mm,bottom=1.25in]{geometry}
-\linespread{1.5} %set linespread for the entire document
-\graphicspath{ {images/} }
+\linespread{1.5} 
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
 
+\makeatletter
+% \patchcmd{<cmd>}{<search>}{<replace>}{<success>}{<failure>}
+\patchcmd{\@makechapterhead}{\huge}{\large}{}{}% for \chapter
+\patchcmd{\@makechapterhead}{\Huge}{\large}{}{}% for \chapter
+\patchcmd{\@makeschapterhead}{\Huge}{\large}{}{}% for \chapter*
+\makeatother
+
+\chapterfont{\centering}
+\sectionfont{\fontsize{12}{15}}
+
+\graphicspath{ {images/} }
 % Title Page
 \title{}
 \author{}
